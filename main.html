@@ -8,38 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>Suplly</h1>
+        <h1>TAVO's BLOG</h1>
     </header>
+    <!-- Formulario para enviar una nueva publicación -->
+    <div class="comment-form">
+        <h3>Realizar una Nueva Publicación</h3>
+        <form id="post-form">
+            <label for="post-title">Tú nombre:</label><br>
+            <input type="text" id="post-title" name="post-title" required><br>
+            <label for="post-content" font-family="Montserrat">Contenido del mensaje:</label><br>
+            <textarea id="post-content" name="post-content" rows="4" cols="50" required class="textArea"></textarea><br>
+            <p align="right"><input type="submit" value="Publicar" ></p>  
+        </form>
+    </div>
     <div class="container">
-        <h2>Publicaciones Recientes</h2>
-<!--
-       
-        <div class="post">
-            <h2>Título de la Publicación 1</h2>
-            <p class="author">Autor: Usuario1</p>
-            <p>Contenido de la publicación...</p>
-            <div class="comment">
-                <p class="author">Comentario por Usuario2</p>
-                <p>Contenido del comentario...</p>
-            </div>
-        </div>
-        <div class="post">
-            <h2>Título de la Publicación 2</h2>
-            <p class="author">Autor: Usuario3</p>
-            <p>Contenido de la publicación...</p>
-        </div>
-    -->
-        <!-- Formulario para enviar una nueva publicación -->
-        <div class="comment-form">
-            <h3>Publicar una Nueva Publicación</h3>
-            <form id="post-form">
-                <label for="post-title">Tú nombre:</label>
-                <input type="text" id="post-title" name="post-title" required><br>
-                <label for="post-content">Contenido del mensaje:</label>
-                <textarea id="post-content" name="post-content" rows="4" cols="50" required></textarea><br>
-                <input type="submit" value="Publicar">
-            </form>
-        </div>
+        <center><h2>Publicaciones Recientes</h2></center>
         <!-- JavaScript para agregar nuevas publicaciones al enviar el formulario -->
         <script src="control.js"></script>
     </div>
